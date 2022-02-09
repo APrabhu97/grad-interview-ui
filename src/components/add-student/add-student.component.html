@@ -1,0 +1,19 @@
+<div>
+    <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>First Name</mat-label>
+            <input matInput [(ngModel)]="firstName" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Last Name</mat-label>
+            <input matInput [(ngModel)]="lastName" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button color="primary" [disabled]="isButtonDisabled()" (click)="onSubmitClick()">Submit</button>
+</div>

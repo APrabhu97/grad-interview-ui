@@ -1,0 +1,19 @@
+<div>
+    <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Student ID</mat-label>
+            <input matInput [(ngModel)]="studentID" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Title</mat-label>
+            <input matInput [(ngModel)]="title" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Year</mat-label>
+            <input matInput [(ngModel)]="year" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button color="primary" [disabled]="isButtonDisabled()" (click)="onSubmitClick()">Submit</button>
+</div>
